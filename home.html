@@ -3,25 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+<link rel="stylesheet" href="style.css">
     <title>Home</title>
 </head>
 <body>
 <section class="header">
 <nav>
-    <a href="index.html">img src =</a>
-<div class="nav-links"></div>
+    <a href="home.html"><img src="images/logo.jpg"></a>
+<div class="nav-links" id="navlinks">
+    <i class="fa fa-window-close" onclick="hidemenu()" ></i>
+    <!-- inline js for clicking menu option -->
 <ul>
     <li><a href="">Home</a></li>
-    <li><a href="">about</a></li>
-    <li><a href="">contact</a></li>
-    <li><a href="">tournament</a></li>
-    <li><a href="">register</a></li>
+    <li><a href="">About</a></li>
+    <li><a href="">Contact</a></li>
+    <li><a href="">Tournament</a></li>
+    <li><a href="">Register</a></li>
 </ul>
 
+</div>
+<i class="fa fa-bars" onclick="showmenu()"></i>
 </nav>
+
+<div class="text-box">
+    <h1>Nepal's Best Football Club</h1>
+    <p>write something</p>
+    <a href="" class="note-btn">visit to know more</a>
+</div>
 
 
 </section>
+<!-- course -->
+
+<section class="introduction">
+    <h1>MYC introduction</h1>
+    <p>MYC Football Club is a passionate and community-driven football club based in Nepal, dedicated to promoting the spirit of the game and developing local football talent. The club stands for discipline, teamwork, and sportsmanship, aiming to inspire young players and contribute positively to Nepal’s football culture.
+With a strong focus on player development, MYC Football Club works to nurture skills both on and off the field, emphasizing fitness, tactical understanding, and character building. The club provides a platform for aspiring footballers to showcase their abilities, grow competitively, and pursue higher levels of the sport.
+MYC Football Club is more than just a team—it is a football family united by hard work, commitment, and a shared love for the beautiful game. Through participation in competitions, training programs, and community engagement, the club continues to strive toward excellence and long-term growth in Nepalese football.</p>
+
+<div class="row">
+    
+    <div class="goal-col">
+    <h3>goals</h3>
+<p>The goal of MYC Football Club is to develop talented footballers by providing quality training, competitive opportunities, and a positive sporting environment. The club aims to promote discipline, teamwork, and sportsmanship while contributing to the growth of football at the local and national levels in Nepal. Through continuous development and community engagement, MYC Football Club strives to inspire young players and build a strong, sustainable football culture.</p>
+</div>
+ <div class="goal-col">
+    <h3>program</h3>
+<p>MYC Football Club runs structured programs focused on developing football skills, physical fitness, and strong character among players. The club provides regular training sessions guided by experienced coaches, emphasizing technical ability, tactical understanding, and discipline. MYC Football Club actively participates in local and regional competitions to give players valuable match experience and exposure. Through youth development and talent identification programs, the club aims to discover and nurture promising footballers from the community. In addition, fitness and conditioning activities, along with leadership and character-building initiatives, help players grow both on and off the field while contributing to the overall development of football in Nepal.
+</p>
+</div>
+ <div class="goal-col">
+    <h3>achivements</h3>
+<p>MYC Football Club has successfully participated in various local and regional football tournaments, earning recognition for its competitive spirit and teamwork. The club has reached the semifinals and finals of several community-level competitions and has recorded multiple match victories against strong opponents. MYC Football Club has also been appreciated for its youth development efforts, with several players selected for district-level teams and local football academies. Through consistent performance, discipline, and commitment, the club has built a positive reputation within the local football community.</p>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+<!-- javascrpit for toogle menu -->
+<!-- we create a inline java give id and make a function of menu hide and show -->
+
+<script>
+var navlinks = document.getElementById("navlinks");
+
+function showmenu(){
+    navlinks.style.right ="0";
+}
+function hidemenu(){
+    navlinks.style.right ="-200px";
+}
+</script>
 </body>
 </html>
